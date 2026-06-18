@@ -9,7 +9,7 @@ export default function About() {
       <div className="w-full h-[75vh] overflow-hidden">
         <img
           src="/yoga6.jpg"
-          alt="Julia Hu seated and smiling"
+          alt="Julia Hu seated and smiling in front of a tropical mural"
           className="w-full h-full object-cover object-top"
         />
       </div>
@@ -20,7 +20,7 @@ export default function About() {
           About Julia
         </h1>
 
-        <div className="space-y-7 text-[#1A1530]/70 leading-relaxed text-lg">
+        <div className="space-y-7 text-[#1A1530]/75 leading-relaxed text-lg">
           <p>
             Julia started practicing yoga in 2018 and received her RYT-200 at
             Lotusland Yoga in San Francisco in 2025, where she subsequently
@@ -41,12 +41,13 @@ export default function About() {
         </div>
       </div>
 
-      {/* Wide image — cello + backbend */}
-      <div className="w-full h-[60vh] overflow-hidden">
+      {/* Cello + backbend — full natural height so whole body is visible */}
+      <div className="w-full overflow-hidden">
         <img
           src="/IMG_3123.jpeg"
-          alt="Julia playing cello during a yoga dance flow"
-          className="w-full h-full object-cover object-center"
+          alt="Julia playing cello while a student holds a backbend"
+          className="w-full object-cover"
+          style={{ maxHeight: "90vh", objectPosition: "center center" }}
         />
       </div>
 
@@ -56,12 +57,12 @@ export default function About() {
           Teaching Philosophy
         </h2>
 
-        <div className="space-y-7 text-[#1A1530]/70 leading-relaxed text-lg">
+        <div className="space-y-7 text-[#1A1530]/75 leading-relaxed text-lg">
           <p>
             Julia believes yoga is as much a practice for daily life as it is
             for the hour spent on the mat. Students leave her class with
-            something to carry into the rest of their day — whether that&apos;s a
-            reflection on yoga philosophy or a renewed sense of groundedness.
+            something to carry into the rest of their day — a reflection on
+            yoga philosophy or a renewed sense of groundedness.
           </p>
           <p>
             Each class begins with intention and moves through sequences that
@@ -79,7 +80,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto px-8 pb-28">
         <img
           src="/yoga2.jpg"
-          alt="Julia in sphinx pose outdoors"
+          alt="Julia in sphinx pose outdoors on a wooden deck"
           className="w-full h-[50vh] object-cover object-center"
         />
       </div>

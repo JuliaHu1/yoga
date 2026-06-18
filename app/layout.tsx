@@ -27,10 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body className="bg-[#D3D3FF] text-[#1A1530] font-sans antialiased">
+      <body className="text-[#1A1530] font-sans antialiased">
         <Nav />
         <main>{children}</main>
-        <footer className="px-8 py-12 border-t border-[#9B8EC4]/40 mt-24 text-center text-sm text-[#5B4B8A]/70 tracking-wide">
+        <footer className="px-8 py-12 border-t border-[#9B8EC4]/40 mt-24 text-center text-sm text-[#5B4B8A]/80 tracking-wide">
           &copy; {new Date().getFullYear()} Julia Hu Yoga. All rights reserved.
         </footer>
       </body>

@@ -3,18 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --bg: #D3D3FF;
-  --fg: #1A1530;
+  --bg-start: #eae8ff;
+  --bg-end: #D3D3FF;
+  --lavender: #D3D3FF;
   --lavender-mid: #9B8EC4;
   --lavender-deep: #5B4B8A;
+  --fg: #1A1530;
 }
 
-html,
+html {
+  background: linear-gradient(160deg, #eae8ff 0%, #D3D3FF 50%, #cbc3ff 100%);
+  min-height: 100%;
+}
+
 body {
-  background-color: #D3D3FF;
+  background: transparent;
   color: #1A1530;
-  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
+  cursor: url('/lotus-cursor.svg') 16 16, auto;
+}
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg) scale(1); }
+  20%  { transform: rotate(-4deg) scale(1.06); }
+  40%  { transform: rotate(4deg) scale(1.06); }
+  60%  { transform: rotate(-3deg) scale(1.04); }
+  80%  { transform: rotate(3deg) scale(1.04); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+.btn-wiggle:hover {
+  animation: wiggle 0.5s ease-in-out;
 }
 
 @layer utilities {

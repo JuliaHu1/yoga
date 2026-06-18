@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="flex items-center justify-between px-8 py-6 bg-[#D3D3FF]">
+    <nav className="flex items-center justify-between px-8 py-6 bg-transparent">
       <Link href="/" className="font-serif text-xl tracking-wide text-[#1A1530]">
         Julia Hu Yoga
       </Link>

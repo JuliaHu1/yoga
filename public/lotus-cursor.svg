@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <!-- stem -->
+  <path d="M16 28 Q16 20 16 17" stroke="#5B4B8A" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- left leaf -->
+  <path d="M16 22 Q10 20 8 24 Q12 26 16 22Z" fill="#9B8EC4" opacity="0.7"/>
+  <!-- right leaf -->
+  <path d="M16 22 Q22 20 24 24 Q20 26 16 22Z" fill="#9B8EC4" opacity="0.7"/>
+  <!-- outer petals -->
+  <path d="M16 17 Q10 14 10 8 Q14 10 16 17Z" fill="#C4B5D9"/>
+  <path d="M16 17 Q22 14 22 8 Q18 10 16 17Z" fill="#C4B5D9"/>
+  <path d="M16 17 Q7 13 8 6 Q13 9 16 17Z" fill="#D3D3FF" stroke="#9B8EC4" stroke-width="0.5"/>
+  <path d="M16 17 Q25 13 24 6 Q19 9 16 17Z" fill="#D3D3FF" stroke="#9B8EC4" stroke-width="0.5"/>
+  <path d="M16 17 Q6 16 5 9 Q11 11 16 17Z" fill="#C4B5D9" opacity="0.6"/>
+  <path d="M16 17 Q26 16 27 9 Q21 11 16 17Z" fill="#C4B5D9" opacity="0.6"/>
+  <!-- center petals -->
+  <path d="M16 17 Q13 11 14 5 Q16 8 16 17Z" fill="#5B4B8A" opacity="0.8"/>
+  <path d="M16 17 Q19 11 18 5 Q16 8 16 17Z" fill="#5B4B8A" opacity="0.8"/>
+  <path d="M16 17 Q16 10 16 4 Q16 4 16 17Z" fill="#7C5FA0" opacity="0.9"/>
+  <!-- center -->
+  <circle cx="16" cy="17" r="2" fill="#5B4B8A"/>
+</svg>
