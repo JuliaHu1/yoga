@@ -8,14 +8,14 @@ export default function Home() {
         <img
           src="/IMG_4645 2.jpeg"
           alt="Outdoor yoga class on the grass"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-center blur-[2px] scale-105"
         />
-        <div className="absolute inset-0 bg-[#FAF8F5]/30" />
+        <div className="absolute inset-0 bg-black/25" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-          <h1 className="font-serif text-6xl md:text-8xl font-light text-white leading-tight mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)]">
+          <h1 className="font-serif text-6xl md:text-8xl font-light text-white leading-tight mb-6 drop-shadow-[0_1px_12px_rgba(0,0,0,0.45)]">
             Find Your Ground
           </h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-xl mb-10 font-light tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.3)]">
+          <p className="text-lg md:text-xl text-white/90 max-w-xl mb-10 font-light tracking-wide drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)]">
             Dynamic, intentional vinyasa yoga in San Francisco.
           </p>
           <Link
