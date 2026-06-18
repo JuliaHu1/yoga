@@ -3,23 +3,26 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      {/* Hero — sits directly under transparent nav, gradient fades from page bg into image */}
-      <section className="relative w-full h-[88vh] overflow-hidden -mt-[76px]">
+      {/* Hero */}
+      <section className="relative w-full h-[90vh] overflow-hidden">
         <img
           src="/IMG_4645 2.jpeg"
           alt="Outdoor yoga class on the grass in San Francisco"
           className="absolute inset-0 w-full h-full object-cover object-center scale-105"
           style={{ filter: "blur(4px) brightness(0.88) contrast(0.92)" }}
         />
-        {/* Gradient from page lavender into hero, then dark at bottom for text */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#D3D3FF]/80 via-transparent to-black/30" />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 pt-[76px]">
-          <h1 className="font-serif text-6xl md:text-8xl font-light text-white leading-tight mb-6"
-            style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}>
+        <div className="absolute inset-0 bg-black/25" />
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+          <h1
+            className="font-serif text-6xl md:text-8xl font-light text-white leading-tight mb-6"
+            style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
+          >
             Find Your Ground
           </h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-xl mb-10 font-light tracking-wide"
-            style={{ textShadow: "0 1px 8px rgba(0,0,0,0.3)" }}>
+          <p
+            className="text-lg md:text-xl text-white/90 max-w-xl mb-10 font-light tracking-wide"
+            style={{ textShadow: "0 1px 8px rgba(0,0,0,0.3)" }}
+          >
             Dynamic, intentional vinyasa yoga in San Francisco.
           </p>
           <Link
@@ -57,7 +60,7 @@ export default function Home() {
               Movement as a way of listening
             </h2>
             <p className="text-[#1A1530]/75 leading-relaxed text-lg mb-6">
-              Each class is an unhurried exploration — an honest conversation between breath and body.
+              Each class is an unhurried exploration, an honest conversation between breath and body.
             </p>
             <Link
               href="/about"

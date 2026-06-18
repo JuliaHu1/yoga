@@ -61,8 +61,8 @@ export default function About() {
           <p>
             Julia believes yoga is as much a practice for daily life as it is
             for the hour spent on the mat. Students leave her class with
-            something to carry into the rest of their day — a reflection on
-            yoga philosophy or a renewed sense of groundedness.
+            something to carry into the rest of their day, whether a reflection
+            on yoga philosophy or a renewed sense of groundedness.
           </p>
           <p>
             Each class begins with intention and moves through sequences that

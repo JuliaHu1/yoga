@@ -21,20 +21,18 @@ body {
   color: #1A1530;
   font-family: var(--font-dm-sans), 'DM Sans', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  cursor: url('/lotus-cursor.svg') 16 16, auto;
+  cursor: url('/lotus-cursor.svg') 18 18, auto;
 }
 
 @keyframes wiggle {
   0%   { transform: rotate(0deg) scale(1); }
-  20%  { transform: rotate(-4deg) scale(1.06); }
-  40%  { transform: rotate(4deg) scale(1.06); }
-  60%  { transform: rotate(-3deg) scale(1.04); }
-  80%  { transform: rotate(3deg) scale(1.04); }
+  25%  { transform: rotate(-1.5deg) scale(1.02); }
+  75%  { transform: rotate(1.5deg) scale(1.02); }
   100% { transform: rotate(0deg) scale(1); }
 }
 
 .btn-wiggle:hover {
-  animation: wiggle 0.5s ease-in-out;
+  animation: wiggle 0.4s ease-in-out;
 }
 
 @layer utilities {
