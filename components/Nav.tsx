@@ -2,18 +2,18 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="flex items-center justify-between px-8 py-6 bg-[#F3F0F8]">
-      <Link href="/" className="font-serif text-xl tracking-wide text-[#2C2638]">
+    <nav className="flex items-center justify-between px-8 py-6 bg-[#D3D3FF]">
+      <Link href="/" className="font-serif text-xl tracking-wide text-[#1A1530]">
         Julia Hu Yoga
       </Link>
       <div className="flex gap-8">
-        <Link href="/" className="text-sm tracking-widest uppercase text-[#2C2638]/70 hover:text-[#7C5FA0] transition-colors">
+        <Link href="/" className="text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
           Home
         </Link>
-        <Link href="/about" className="text-sm tracking-widest uppercase text-[#2C2638]/70 hover:text-[#7C5FA0] transition-colors">
+        <Link href="/about" className="text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
           About
         </Link>
-        <Link href="/booking" className="text-sm tracking-widest uppercase text-[#2C2638]/70 hover:text-[#7C5FA0] transition-colors">
+        <Link href="/booking" className="text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
           Booking
         </Link>
       </div>

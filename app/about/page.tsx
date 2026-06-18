@@ -16,11 +16,11 @@ export default function About() {
 
       {/* Bio */}
       <div className="max-w-2xl mx-auto px-8 py-24">
-        <h1 className="font-serif text-5xl font-light text-[#2C2638] mb-10">
+        <h1 className="font-serif text-5xl font-light text-[#1A1530] mb-10">
           About Julia
         </h1>
 
-        <div className="space-y-7 text-[#2C2638]/70 leading-relaxed text-lg">
+        <div className="space-y-7 text-[#1A1530]/70 leading-relaxed text-lg">
           <p>
             Julia started practicing yoga in 2018 and received her RYT-200 at
             Lotusland Yoga in San Francisco in 2025, where she subsequently
@@ -52,11 +52,11 @@ export default function About() {
 
       {/* Philosophy */}
       <div className="max-w-2xl mx-auto px-8 py-24">
-        <h2 className="font-serif text-3xl font-light text-[#2C2638] mb-8">
+        <h2 className="font-serif text-3xl font-light text-[#1A1530] mb-8">
           Teaching Philosophy
         </h2>
 
-        <div className="space-y-7 text-[#2C2638]/70 leading-relaxed text-lg">
+        <div className="space-y-7 text-[#1A1530]/70 leading-relaxed text-lg">
           <p>
             Julia believes yoga is as much a practice for daily life as it is
             for the hour spent on the mat. Students leave her class with

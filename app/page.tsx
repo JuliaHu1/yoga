@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <Link
             href="/booking"
-            className="inline-block border border-white text-white px-10 py-3 text-sm tracking-widest uppercase hover:bg-white hover:text-[#2C2638] transition-colors"
+            className="inline-block border border-white text-white px-10 py-3 text-sm tracking-widest uppercase hover:bg-white hover:text-[#1A1530] transition-colors"
           >
             Book a Class
           </Link>
@@ -29,13 +29,13 @@ export default function Home() {
 
       {/* Intro section */}
       <section className="max-w-2xl mx-auto px-8 py-28 text-center">
-        <h2 className="font-serif text-4xl font-light text-[#2C2638] mb-8">
+        <h2 className="font-serif text-4xl font-light text-[#1A1530] mb-8">
           Practice rooted in presence
         </h2>
-        <p className="text-[#2C2638]/70 leading-relaxed text-lg mb-6">
+        <p className="text-[#1A1530]/70 leading-relaxed text-lg mb-6">
           Vinyasa flows that build heat and then let it settle — with space woven in for both playful challenge and genuine rest.
         </p>
-        <p className="text-[#2C2638]/70 leading-relaxed text-lg">
+        <p className="text-[#1A1530]/70 leading-relaxed text-lg">
           Grounded in the Bhagavad Gita, the Yoga Sutras, and the language of the chakras.
         </p>
       </section>
@@ -49,15 +49,15 @@ export default function Home() {
             className="w-full h-[70vh] object-cover object-top"
           />
           <div>
-            <h2 className="font-serif text-4xl font-light text-[#2C2638] mb-8 leading-snug">
+            <h2 className="font-serif text-4xl font-light text-[#1A1530] mb-8 leading-snug">
               Movement as a way of listening
             </h2>
-            <p className="text-[#2C2638]/70 leading-relaxed text-lg mb-6">
+            <p className="text-[#1A1530]/70 leading-relaxed text-lg mb-6">
               Each class is an unhurried exploration — an honest conversation between breath and body.
             </p>
             <Link
               href="/about"
-              className="inline-block text-sm tracking-widest uppercase text-[#7C5FA0] border-b border-[#C4B5D9] pb-0.5 hover:text-[#2C2638] hover:border-[#2C2638] transition-colors"
+              className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
             >
               About Julia
             </Link>
