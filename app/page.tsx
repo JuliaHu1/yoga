@@ -4,12 +4,12 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative w-full h-[90vh] overflow-hidden">
+      <section className="relative w-full h-[78vh] overflow-hidden">
         <img
           src="/IMG_4645 2.jpeg"
           alt="Outdoor yoga class on the grass in San Francisco"
           className="absolute inset-0 w-full h-full object-cover object-center scale-105"
-          style={{ filter: "blur(4px) brightness(0.88) contrast(0.92)" }}
+          style={{ filter: "blur(4px) brightness(1.05) contrast(0.85)" }}
         />
         <div className="absolute inset-0 bg-black/25" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
@@ -88,7 +88,7 @@ export default function Home() {
               href="/about"
               className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
             >
-              About Julia
+              About Me
             </Link>
           </div>
         </div>

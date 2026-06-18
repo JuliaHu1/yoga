@@ -32,7 +32,7 @@ export default function RootLayout({
         <CustomCursor />
         <Nav />
         <main>{children}</main>
-        <footer className="px-8 py-12 border-t border-[#9B8EC4]/40 mt-24 text-center text-sm text-[#5B4B8A]/80 tracking-wide">
+        <footer className="px-8 py-12 border-t border-[#9B8EC4]/40 mt-24 text-center text-sm text-[#5B4B8A]/80 tracking-wide font-serif">
           &copy; {new Date().getFullYear()} Julia Hu Yoga. All rights reserved.
         </footer>
       </body>
