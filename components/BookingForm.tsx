@@ -33,7 +33,6 @@ const AVAILABILITY = [
 export default function BookingForm() {
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const [s1, setS1] = useState<Step1>({
     name: '',
@@ -55,20 +54,21 @@ export default function BookingForm() {
   const step1Valid =
     s1.name.trim() && s1.email.trim() && s1.experience && s1.motivation.length > 0;
 
-  const handleSubmit = async () => {
-    setLoading(true);
-    try {
-      await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...s1, ...s2, motivation: s1.motivation.join(', '), availability: s2.availability.join(', ') }),
-      });
-      setSubmitted(true);
-    } catch {
-      setSubmitted(true); // show success either way for now
-    } finally {
-      setLoading(false);
-    }
+  const handleSubmit = () => {
+    const body = [
+      `Name: ${s1.name}`,
+      `Email: ${s1.email}`,
+      `Experience: ${s1.experience}`,
+      `What brings me here: ${s1.motivation.join(', ')}`,
+      ``,
+      `What I'm hoping for: ${s2.goals}`,
+      `Physical considerations: ${s2.physical || 'None shared'}`,
+      `Phone: ${s2.phone}`,
+      `Availability: ${s2.availability.join(', ') || 'Not specified'}`,
+    ].join('\n');
+
+    window.location.href = `mailto:hujulia29@gmail.com?subject=1:1 Inquiry from ${encodeURIComponent(s1.name)}&body=${encodeURIComponent(body)}`;
+    setSubmitted(true);
   };
 
   if (submitted) {
@@ -195,10 +195,9 @@ export default function BookingForm() {
             </button>
             <button
               onClick={handleSubmit}
-              disabled={loading}
-              className="inline-block border border-[#5B4B8A] text-[#5B4B8A] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#5B4B8A] hover:text-white transition-colors disabled:opacity-50"
+              className="inline-block border border-[#5B4B8A] text-[#5B4B8A] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#5B4B8A] hover:text-white transition-colors"
             >
-              {loading ? 'Sending...' : 'Send my details'}
+              Send my details
             </button>
           </div>
 
