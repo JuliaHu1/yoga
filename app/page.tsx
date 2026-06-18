@@ -14,20 +14,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/25" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
           <h1
-            className="font-serif text-6xl md:text-8xl font-light text-white leading-tight mb-6"
-            style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
+            className="font-serif text-6xl md:text-8xl font-light leading-tight mb-6"
+            style={{ color: "#F5F0E8", textShadow: "0 1px 16px rgba(0,0,0,0.3)" }}
           >
             Find Your Ground
           </h1>
           <p
-            className="text-lg md:text-xl text-white/90 max-w-xl mb-10 font-light tracking-wide"
-            style={{ textShadow: "0 1px 8px rgba(0,0,0,0.3)" }}
+            className="text-lg md:text-xl max-w-xl mb-10 font-light tracking-wide"
+            style={{ color: "#EDE8DF", textShadow: "0 1px 8px rgba(0,0,0,0.25)" }}
           >
             Dynamic, intentional vinyasa yoga in San Francisco.
           </p>
           <Link
             href="/booking"
-            className="btn-wiggle inline-block border border-white text-white px-10 py-3 text-sm tracking-widest uppercase hover:bg-white hover:text-[#1A1530] transition-colors"
+            className="btn-wiggle inline-block border border-[#F5F0E8] text-[#F5F0E8] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#F5F0E8] hover:text-[#1A1530] transition-colors"
           >
             Book a 1:1
           </Link>
@@ -45,26 +45,6 @@ export default function Home() {
           </p>
           <p>
             Rather than focusing on perfect alignment in a set of poses, I teach a practice that empowers you to feel strong, joyful, and grounded in your own body. Whether you join me in the park on a Saturday morning or book a 1:1 session, let&apos;s explore it together and build toward a self, and a community, that holds a little more compassion.
-          </p>
-        </div>
-      </section>
-
-      {/* Two feature blocks */}
-      <section className="max-w-5xl mx-auto px-8 pb-24 grid md:grid-cols-2 gap-16">
-        <div>
-          <h2 className="font-serif text-2xl font-light text-[#1A1530] mb-4">
-            Practice rooted in presence
-          </h2>
-          <p className="text-[#1A1530]/75 leading-relaxed">
-            Vinyasa flows with space woven in for playful challenge and genuine rest. Each class is an unhurried exploration, an honest conversation between breath and body.
-          </p>
-        </div>
-        <div>
-          <h2 className="font-serif text-2xl font-light text-[#1A1530] mb-4">
-            Rooted in classical yoga philosophy
-          </h2>
-          <p className="text-[#1A1530]/75 leading-relaxed">
-            Shaped by years of dedicated practice, study, and a deep respect for the traditions that inform this work.
           </p>
         </div>
       </section>
