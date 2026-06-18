@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- lavender background -->
+  <rect width="32" height="32" rx="6" fill="#f0eeff"/>
+  <!-- lily pad -->
+  <ellipse cx="16" cy="27" rx="9" ry="3" fill="#7a9e7e" opacity="0.75"/>
+  <path d="M16 24 L14.5 27" stroke="#5a7a5e" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- outer left petal -->
+  <path d="M16 23 Q9 19 9 11 Q13 14 16 23Z" fill="#c9b8e0" stroke="#5B4B8A" stroke-width="1" stroke-linejoin="round"/>
+  <!-- outer right petal -->
+  <path d="M16 23 Q23 19 23 11 Q19 14 16 23Z" fill="#c9b8e0" stroke="#5B4B8A" stroke-width="1" stroke-linejoin="round"/>
+  <!-- inner left petal -->
+  <path d="M16 23 Q11 17 12 8 Q15 13 16 23Z" fill="#b8a4d8" stroke="#5B4B8A" stroke-width="1" stroke-linejoin="round"/>
+  <!-- inner right petal -->
+  <path d="M16 23 Q21 17 20 8 Q17 13 16 23Z" fill="#b8a4d8" stroke="#5B4B8A" stroke-width="1" stroke-linejoin="round"/>
+  <!-- center petal -->
+  <path d="M16 23 Q13 15 16 4 Q19 15 16 23Z" fill="#a090c8" stroke="#5B4B8A" stroke-width="1" stroke-linejoin="round"/>
+</svg>
