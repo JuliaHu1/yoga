@@ -43,7 +43,7 @@ export default function Home() {
           Vinyasa flows that build heat and then let it settle, with space woven in for both playful challenge and genuine rest.
         </p>
         <p className="text-[#1A1530]/75 leading-relaxed text-lg">
-          Grounded in the Bhagavad Gita, the Yoga Sutras, and the language of the chakras.
+          Rooted in classical yoga philosophy and shaped by years of dedicated practice and study.
         </p>
       </section>
 
