@@ -6,7 +6,7 @@ export default function Booking() {
   return (
     <section className="max-w-4xl mx-auto px-8 py-24">
       <h1 className="font-serif text-5xl font-light text-[#1A1530] mb-4">
-        Book a Private
+        Book a 1:1
       </h1>
       <p className="text-[#1A1530]/75 text-lg mb-16 leading-relaxed max-w-xl">
         Choose a time that works for you. All levels are welcome.

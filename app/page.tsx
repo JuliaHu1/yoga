@@ -29,25 +29,47 @@ export default function Home() {
             href="/booking"
             className="btn-wiggle inline-block border border-white text-white px-10 py-3 text-sm tracking-widest uppercase hover:bg-white hover:text-[#1A1530] transition-colors"
           >
-            Book a Private
+            Book a 1:1
           </Link>
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="max-w-2xl mx-auto px-8 py-28 text-center">
-        <h2 className="font-serif text-4xl font-light text-[#1A1530] mb-8">
-          Practice rooted in presence
-        </h2>
-        <p className="text-[#1A1530]/75 leading-relaxed text-lg mb-6">
-          Vinyasa flows that build heat and then let it settle, with space woven in for both playful challenge and genuine rest.
-        </p>
-        <p className="text-[#1A1530]/75 leading-relaxed text-lg">
-          Rooted in classical yoga philosophy and shaped by years of dedicated practice and study.
-        </p>
+      {/* Intro essay */}
+      <section className="max-w-2xl mx-auto px-8 py-28">
+        <div className="space-y-7 text-[#1A1530]/80 leading-relaxed text-lg">
+          <p>
+            Most of us know the feeling: doing everything right, checking every box, and still sensing that something hasn&apos;t quite clicked into place. Waiting to exhale until we hit the next milestone, then the next.
+          </p>
+          <p>
+            Yoga philosophy has been sitting with this question for thousands of years. Its answer begins not in the mind, but in the body. In learning to listen to the signals already there, beneath the noise of everything we think we should be doing.
+          </p>
+          <p>
+            Rather than focusing on perfect alignment in a set of poses, I teach a practice that empowers you to feel strong, joyful, and grounded in your own body. Whether you join me in the park on a Saturday morning or book a 1:1 session, let&apos;s explore it together and build toward a self, and a community, that holds a little more compassion.
+          </p>
+        </div>
       </section>
 
-      {/* Portrait teaser */}
+      {/* Two feature blocks */}
+      <section className="max-w-5xl mx-auto px-8 pb-24 grid md:grid-cols-2 gap-16">
+        <div>
+          <h2 className="font-serif text-2xl font-light text-[#1A1530] mb-4">
+            Practice rooted in presence
+          </h2>
+          <p className="text-[#1A1530]/75 leading-relaxed">
+            Vinyasa flows with space woven in for playful challenge and genuine rest. Each class is an unhurried exploration, an honest conversation between breath and body.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-serif text-2xl font-light text-[#1A1530] mb-4">
+            Rooted in classical yoga philosophy
+          </h2>
+          <p className="text-[#1A1530]/75 leading-relaxed">
+            Shaped by years of dedicated practice, study, and a deep respect for the traditions that inform this work.
+          </p>
+        </div>
+      </section>
+
+      {/* About link with portrait */}
       <section className="w-full overflow-hidden">
         <div className="max-w-5xl mx-auto px-8 pb-28 grid md:grid-cols-2 gap-16 items-center">
           <img
