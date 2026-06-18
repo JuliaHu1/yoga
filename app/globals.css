@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --bg: #FAF8F5;
-  --fg: #1a1a1a;
+  --bg: #F3F0F8;
+  --fg: #2C2638;
+  --lavender-mid: #C4B5D9;
+  --lavender-deep: #7C5FA0;
 }
 
 html,
 body {
-  background-color: #FAF8F5;
-  color: #1a1a1a;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #F3F0F8;
+  color: #2C2638;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
