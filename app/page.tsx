@@ -16,7 +16,7 @@ export default function Home() {
             Find Your Ground
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-xl mb-10 font-light tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.3)]">
-            A gentle return to breath, body, and stillness — wherever you are.
+            Dynamic, intentional vinyasa yoga in San Francisco.
           </p>
           <Link
             href="/booking"
@@ -33,10 +33,10 @@ export default function Home() {
           Practice rooted in presence
         </h2>
         <p className="text-stone-600 leading-relaxed text-lg mb-6">
-          Whether you are new to yoga or deepening a long-standing practice, each session is an invitation to slow down, listen inward, and reconnect with what matters.
+          Vinyasa flows that build heat and then let it settle — with space woven in for both playful challenge and genuine rest.
         </p>
         <p className="text-stone-600 leading-relaxed text-lg">
-          Classes are small, unhurried, and shaped around you.
+          Grounded in the Bhagavad Gita, the Yoga Sutras, and the language of the chakras.
         </p>
       </section>
 

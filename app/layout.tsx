@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Serene Roots Yoga",
-  description: "Find your ground with mindful, grounded yoga practice.",
+  title: "Julia Hu Yoga",
+  description: "Dynamic, intentional vinyasa yoga with Julia Hu in San Francisco.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
         <Nav />
         <main>{children}</main>
         <footer className="px-8 py-12 border-t border-stone-200 mt-24 text-center text-sm text-stone-400 tracking-wide">
-          &copy; {new Date().getFullYear()} Serene Roots Yoga. All rights reserved.
+          &copy; {new Date().getFullYear()} Julia Hu Yoga. All rights reserved.
         </footer>
       </body>
     </html>

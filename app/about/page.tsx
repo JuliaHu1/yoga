@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About | Serene Roots Yoga",
+  title: "About | Julia Hu Yoga",
 };
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
       <div className="w-full h-[75vh] overflow-hidden">
         <img
           src="/yoga6.jpg"
-          alt="Julia seated and smiling"
+          alt="Julia Hu seated and smiling"
           className="w-full h-full object-cover object-top"
         />
       </div>
@@ -22,22 +22,30 @@ export default function About() {
 
         <div className="space-y-7 text-stone-600 leading-relaxed text-lg">
           <p>
-            I have been teaching yoga for over a decade, drawn to the practice after a long search for stillness in a life that moved too fast. Yoga gave me a language for something I had always sensed but struggled to articulate: that the body knows how to heal itself when we stop rushing past it.
+            Julia started practicing yoga in 2018 and received her RYT-200 at
+            Lotusland Yoga in San Francisco in 2025, where she subsequently
+            completed a teaching apprenticeship with Jasmine Tarkeshi.
           </p>
           <p>
-            My training is rooted in Hatha and Yin traditions, with influences from somatic movement therapy and Vipassana meditation. I hold certifications from the Yoga Alliance (500-hour RYT) and have studied with teachers across India, Portugal, and the Pacific Northwest.
+            Her practice is rooted in the philosophical traditions of yoga: the
+            Bhagavad Gita, the Yoga Sutras, and the language of the chakras. She
+            brings these teachings into class as sources of wisdom to guide the
+            physical practice.
           </p>
           <p>
-            I teach small groups and one-on-one sessions outdoors and in intimate studio spaces. Sessions unfold slowly — there is no rush to arrive anywhere, no performance to maintain. The practice is whatever shows up when you give it your full attention.
+            Julia&apos;s vinyasa flows are dynamic and intentional, with space woven
+            in for restoration and stillness. She tends toward sequences that
+            build heat and then let it settle, creating room for both playful
+            challenge and genuine rest.
           </p>
         </div>
       </div>
 
-      {/* Wide landscape image — cello + backbend */}
+      {/* Wide image — cello + backbend */}
       <div className="w-full h-[60vh] overflow-hidden">
         <img
           src="/IMG_3123.jpeg"
-          alt="Yoga session with live cello music"
+          alt="Julia playing cello during a yoga dance flow"
           className="w-full h-full object-cover object-center"
         />
       </div>
@@ -50,18 +58,25 @@ export default function About() {
 
         <div className="space-y-7 text-stone-600 leading-relaxed text-lg">
           <p>
-            I believe yoga is not a performance of flexibility or strength. It is a practice of attention — noticing where you are holding, where you are bracing against life, and learning, slowly, to soften.
+            Julia believes yoga is as much a practice for daily life as it is
+            for the hour spent on the mat. Students leave her class with
+            something to carry into the rest of their day — whether that&apos;s a
+            reflection on yoga philosophy or simply a renewed sense of
+            groundedness.
           </p>
           <p>
-            Each class begins with a few minutes of simple sitting: not to achieve a meditative state, but to feel the room, the breath, the particular quality of this day. We move from there.
+            Each class begins with intention and moves through sequences that
+            build heat and then let it settle. There is room for challenge,
+            and equally, room for rest.
           </p>
           <p>
-            I draw on breath work, long-held poses, and quiet transitions. I offer modifications readily and cues sparingly. The goal is for you to leave feeling more yourself, not less.
+            She has also been known to put down the mat entirely and pick up
+            the cello for the occasional yoga dance flow with Ati.
           </p>
         </div>
       </div>
 
-      {/* Sphinx — closing image */}
+      {/* Closing image */}
       <div className="max-w-4xl mx-auto px-8 pb-28">
         <img
           src="/yoga2.jpg"
