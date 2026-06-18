@@ -1,12 +1,19 @@
 export const metadata = {
-  title: "About | Julia Hu Yoga",
+  title: "About Me | Julia Hu Yoga",
 };
 
 export default function About() {
   return (
     <article className="max-w-2xl mx-auto px-8 pt-20 pb-28">
+      {/* Photo above text */}
+      <img
+        src="/yoga6.jpg"
+        alt="Julia Hu"
+        className="w-full h-[55vh] object-cover object-top mb-16"
+      />
+
       <h1 className="font-serif text-5xl font-light text-[#1A1530] mb-12">
-        About Julia
+        About me
       </h1>
 
       <div className="space-y-7 text-[#1A1530]/75 leading-relaxed text-lg mb-20">
@@ -34,11 +41,10 @@ export default function About() {
         </p>
       </div>
 
-      {/* Single well-composed photo */}
       <img
         src="/yoga2.jpg"
         alt="Julia in sphinx pose outdoors on a wooden deck"
-        className="w-full h-[55vh] object-cover object-center"
+        className="w-full h-[50vh] object-cover object-center"
       />
     </article>
   );
