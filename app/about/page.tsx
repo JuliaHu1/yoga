@@ -5,27 +5,27 @@ export const metadata = {
 export default function About() {
   return (
     <article>
-      {/* Full-bleed portrait header */}
-      <div className="w-full h-[75vh] overflow-hidden">
-        <img
-          src="/yoga6.jpg"
-          alt="Julia Hu seated and smiling in front of a tropical mural"
-          className="w-full h-full object-cover object-top"
-        />
-      </div>
-
-      {/* Bio */}
-      <div className="max-w-2xl mx-auto px-8 py-24">
-        <h1 className="font-serif text-5xl font-light text-[#1A1530] mb-10">
-          About Julia
-        </h1>
+      {/* Bio — portrait inline, much smaller */}
+      <div className="max-w-2xl mx-auto px-8 pt-20 pb-24">
+        <div className="flex flex-col sm:flex-row gap-12 items-start mb-16">
+          <img
+            src="/yoga6.jpg"
+            alt="Julia Hu"
+            className="w-48 h-56 object-cover object-top flex-shrink-0"
+          />
+          <div>
+            <h1 className="font-serif text-5xl font-light text-[#1A1530] mb-6">
+              About Julia
+            </h1>
+            <p className="text-[#1A1530]/75 leading-relaxed text-lg">
+              Julia started practicing yoga in 2018 and received her RYT-200 at
+              Lotusland Yoga in San Francisco in 2025, where she subsequently
+              completed a teaching apprenticeship with Jasmine Tarkeshi.
+            </p>
+          </div>
+        </div>
 
         <div className="space-y-7 text-[#1A1530]/75 leading-relaxed text-lg">
-          <p>
-            Julia started practicing yoga in 2018 and received her RYT-200 at
-            Lotusland Yoga in San Francisco in 2025, where she subsequently
-            completed a teaching apprenticeship with Jasmine Tarkeshi.
-          </p>
           <p>
             Her practice is rooted in the philosophical traditions of yoga: the
             Bhagavad Gita, the Yoga Sutras, and the language of the chakras. She
@@ -41,7 +41,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* Cello + backbend — full natural height so whole body is visible */}
+      {/* Cello + backbend */}
       <div className="w-full overflow-hidden">
         <img
           src="/IMG_3123.jpeg"

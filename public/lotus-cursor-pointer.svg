@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 100 90" fill="none" stroke="#5B4B8A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- closed/tight lotus bud - petals pulled inward -->
+  <!-- outer left -->
+  <path d="M50 75 Q28 65 30 48 Q40 52 50 75Z"/>
+  <!-- outer right -->
+  <path d="M50 75 Q72 65 70 48 Q60 52 50 75Z"/>
+  <!-- inner left -->
+  <path d="M50 75 Q36 60 40 30 Q46 42 50 75Z"/>
+  <!-- inner right -->
+  <path d="M50 75 Q64 60 60 30 Q54 42 50 75Z"/>
+  <!-- center -->
+  <path d="M50 75 Q44 50 50 18 Q56 50 50 75Z"/>
+</svg>

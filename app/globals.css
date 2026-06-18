@@ -3,16 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --bg-start: #eae8ff;
-  --bg-end: #D3D3FF;
-  --lavender: #D3D3FF;
   --lavender-mid: #9B8EC4;
   --lavender-deep: #5B4B8A;
   --fg: #1A1530;
 }
 
 html {
-  background: linear-gradient(160deg, #eae8ff 0%, #D3D3FF 50%, #cbc3ff 100%);
+  background: linear-gradient(160deg, #faf9ff 0%, #f0eeff 50%, #ebe8ff 100%);
   min-height: 100%;
 }
 
@@ -22,6 +19,10 @@ body {
   font-family: var(--font-dm-sans), 'DM Sans', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   cursor: url('/lotus-cursor.svg') 18 18, auto;
+}
+
+a, button, [role="button"], label[for] {
+  cursor: url('/lotus-cursor-pointer.svg') 18 18, pointer;
 }
 
 @keyframes wiggle {
