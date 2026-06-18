@@ -18,15 +18,15 @@ body {
   color: #1A1530;
   font-family: var(--font-dm-sans), 'DM Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  cursor: url('/lotus-cursor.svg') 18 18, auto;
+  cursor: none;
+}
+
+*, *::before, *::after {
+  cursor: none !important;
 }
 
 p, li, a, span, input, textarea, button {
   font-family: var(--font-dm-sans), 'DM Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
-}
-
-a, button, [role="button"], label[for] {
-  cursor: url('/lotus-cursor-pointer.svg') 18 18, pointer;
 }
 
 @keyframes wiggle {

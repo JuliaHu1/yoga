@@ -78,7 +78,7 @@ export default function Home() {
           Stay in the loop
         </h2>
         <p className="text-[#1A1530]/75 leading-relaxed mb-8">
-          Subscribe to receive announcements and updates about upcoming classes and events.
+          Sign up for my email list to receive occasional updates and announcements about public classes.
         </p>
         <a
           href="mailto:hujulia29@gmail.com?subject=Subscribe me to class updates"
