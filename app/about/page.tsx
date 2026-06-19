@@ -4,15 +4,15 @@ export const metadata = {
 
 export default function About() {
   return (
-    <article className="max-w-2xl mx-auto px-8 pt-20 pb-28">
+    <article className="max-w-2xl mx-auto px-5 md:px-8 pt-12 md:pt-20 pb-20 md:pb-28">
       {/* Photo above heading */}
       <img
         src="/yoga2.jpg"
         alt="Julia in sphinx pose outdoors on a wooden deck"
-        className="w-full h-[55vh] object-cover object-center mb-16"
+        className="w-full h-[40vh] md:h-[55vh] object-cover object-center mb-10 md:mb-16"
       />
 
-      <h1 className="font-serif text-5xl font-light text-[#1A1530] mb-12">
+      <h1 className="font-serif text-4xl md:text-5xl font-light text-[#1A1530] mb-8 md:mb-12">
         About me
       </h1>
 

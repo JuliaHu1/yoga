@@ -151,7 +151,7 @@ export default function BookingForm() {
   const inputCls = 'w-full border-b border-[#9B8EC4]/60 bg-transparent py-3 text-[#1A1530] placeholder-[#1A1530]/40 focus:outline-none focus:border-[#5B4B8A] transition-colors text-base';
   const labelCls = 'block font-serif text-base font-light text-[#1A1530] mb-2';
   const chipCls = (active: boolean) =>
-    `px-4 py-2 text-sm border transition-colors cursor-pointer select-none ${
+    `px-4 py-2.5 text-sm border transition-colors cursor-pointer select-none min-h-[44px] flex items-center ${
       active
         ? 'border-[#5B4B8A] bg-[#5B4B8A] text-white'
         : 'border-[#9B8EC4]/60 text-[#1A1530]/70 hover:border-[#5B4B8A]'

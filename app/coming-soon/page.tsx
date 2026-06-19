@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function ComingSoon() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center text-center px-8 -mt-24">
+    <main className="min-h-screen flex flex-col items-center justify-center text-center px-5 md:px-8 -mt-24">
       <svg width="52" height="60" viewBox="0 0 80 96" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-10 opacity-80">
         <ellipse cx="40" cy="84" rx="28" ry="9" fill="#7a9e7e" opacity="0.72"/>
         <path d="M40 75 L37 84" stroke="#5a7a5e" strokeWidth="2" strokeLinecap="round"/>
@@ -17,7 +17,7 @@ export default function ComingSoon() {
         <path d="M40 72 Q36 52 40 20 Q44 52 40 72Z" fill="#bfaed8" stroke="#5B4B8A" strokeWidth="1.8" strokeLinejoin="round"/>
       </svg>
 
-      <h1 className="font-serif text-5xl md:text-6xl font-light text-[#1A1530] mb-4">
+      <h1 className="font-serif text-4xl md:text-6xl font-light text-[#1A1530] mb-4">
         Julia Hu Yoga
       </h1>
       <p className="text-[#1A1530]/50 tracking-widest uppercase text-sm mb-16">
