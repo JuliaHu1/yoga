@@ -91,7 +91,7 @@ export default function BookingForm() {
       <div className="text-center py-24 max-w-lg mx-auto px-8">
         <h2 className="font-serif text-4xl font-light text-[#1A1530] mb-6">Thank you, {s1.name.split(' ')[0]}.</h2>
         <p className="text-[#1A1530]/75 leading-relaxed text-lg">
-          I&apos;ll read through what you&apos;ve shared and be in touch within 48 hours to set up a call.
+          I&apos;m excited to embark on this journey together!
         </p>
       </div>
     );
