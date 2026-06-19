@@ -7,8 +7,10 @@ export default function EmailSignup() {
   const [state, setState] = useState<State>('idle');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [emailTouched, setEmailTouched] = useState(false);
 
-  const valid = name.trim() && email.includes('@');
+  const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+  const valid = name.trim() && emailValid;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -67,9 +69,13 @@ export default function EmailSignup() {
           type="email"
           value={email}
           onChange={e => setEmail(e.target.value)}
+          onBlur={() => setEmailTouched(true)}
           placeholder="you@example.com"
           className="w-full border-b border-[#9B8EC4]/60 bg-transparent py-3 text-[#1A1530] placeholder-[#1A1530]/40 focus:outline-none focus:border-[#5B4B8A] transition-colors text-base"
         />
+        {emailTouched && email && !emailValid && (
+          <p className="text-[#9B8EC4] text-sm mt-2">Please enter a valid email address.</p>
+        )}
       </div>
       {state === 'error' && (
         <p className="text-red-400 text-sm">Something went wrong — please try again.</p>
