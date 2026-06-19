@@ -13,9 +13,12 @@ export default function EmailSignup() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setState('loading');
+    const url = process.env.NEXT_PUBLIC_SHEETS_URL;
+    if (!url) { setState('done'); return; } // graceful fallback if env var missing
     try {
-      await fetch(process.env.NEXT_PUBLIC_SHEETS_URL!, {
+      await fetch(url, {
         method: 'POST',
+        mode: 'no-cors', // required for Google Apps Script
         body: JSON.stringify({ name, email }),
       });
       setState('done');
