@@ -39,13 +39,13 @@ export default function Home() {
       <section className="max-w-2xl mx-auto px-8 py-28">
         <div className="space-y-7 text-[#1A1530]/80 leading-relaxed text-lg">
           <p>
-            Most of us know the feeling: doing everything right, checking every box, and still sensing that something hasn&apos;t quite clicked into place. Waiting to exhale until we hit the next milestone, then the next.
+            Many of us know the feeling: doing everything right, checking every box, and still sensing that something hasn&apos;t quite clicked into place. Perhaps waiting to exhale until we hit the next milestone, then the next.
           </p>
           <p>
-            Yoga philosophy has been sitting with this question for thousands of years. Its answer begins not in the mind, but in the body. In learning to listen to the signals already there, beneath the noise of everything we think we should be doing.
+            How do we balance a sense of momentum with a sense of equilibrium? Yoga philosophy has been sitting with this question for thousands of years. Its answer begins not in the mind, but in the body. In learning to listen to the signals that are already there, beneath the noise of everything we think we should be doing.
           </p>
           <p>
-            Rather than focusing on perfect alignment in a set of poses, I teach a practice that empowers you to feel strong, joyful, and grounded in your own body. Whether you join me in the park on a Saturday morning or book a 1:1 session, let&apos;s explore it together and build toward a self, and a community, that holds a little more compassion.
+            Rather than focusing on perfect alignment in a set of poses, I teach a practice that empowers you to feel rooted, strong, and joyful in your own body. Whether you join me for a weekend park class or book a 1:1 session, let&apos;s explore the practice together and build toward a self and a community that holds more curiosity and compassion.
           </p>
         </div>
       </section>
