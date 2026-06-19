@@ -13,14 +13,13 @@ export default function EmailSignup() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setState('loading');
-    const url = process.env.NEXT_PUBLIC_SHEETS_URL;
-    if (!url) { setState('done'); return; } // graceful fallback if env var missing
+    const base = process.env.NEXT_PUBLIC_SHEETS_URL;
+    if (!base) { setState('done'); return; }
     try {
-      await fetch(url, {
-        method: 'POST',
-        mode: 'no-cors', // required for Google Apps Script
-        body: JSON.stringify({ name, email }),
-      });
+      const url = new URL(base);
+      url.searchParams.set('name', name);
+      url.searchParams.set('email', email);
+      await fetch(url.toString(), { method: 'GET', mode: 'no-cors' });
       setState('done');
     } catch {
       setState('error');
