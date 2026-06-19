@@ -35,9 +35,8 @@ export default function About() {
           challenge and rest.
         </p>
         <p>
-          I think about yoga as something you carry with you. My hope is that
-          students leave with something useful: a felt sense of ease in their
-          own body, or a question worth sitting with.
+          My hope is that students leave with something useful, such as a felt
+          sense of ease in their own body or a question worth sitting with.
         </p>
       </div>
 
