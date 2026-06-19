@@ -5,7 +5,13 @@ export default function CustomCursor() {
   const [pos, setPos] = useState({ x: -100, y: -100 });
   const [blooming, setBlooming] = useState(false);
 
+  const [isTouch, setIsTouch] = useState(false);
+
   useEffect(() => {
+    if (window.matchMedia('(pointer: coarse)').matches) {
+      setIsTouch(true);
+      return;
+    }
     const onMove = (e: MouseEvent) => {
       setPos({ x: e.clientX, y: e.clientY });
       const el = document.elementFromPoint(e.clientX, e.clientY);
@@ -14,6 +20,8 @@ export default function CustomCursor() {
     window.addEventListener('mousemove', onMove);
     return () => window.removeEventListener('mousemove', onMove);
   }, []);
+
+  if (isTouch) return null;
 
   // Petal rotation: closed = petals tight together, blooming = spread wide
   const p = (closed: number, open: number) =>

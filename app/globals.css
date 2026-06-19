@@ -21,8 +21,10 @@ body {
   cursor: none;
 }
 
-*, *::before, *::after {
-  cursor: none !important;
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
 }
 
 p, li, a, span, input, textarea, button {

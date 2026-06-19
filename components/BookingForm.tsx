@@ -97,7 +97,7 @@ export default function BookingForm() {
       <div className="flex items-center gap-3 mb-16">
         {[1, 2].map(n => (
           <div key={n} className="flex items-center gap-3">
-            <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs transition-colors ${
+            <div className={`w-7 h-7 rounded-full flex items-center justify-center font-serif text-base transition-colors ${
               step >= n ? 'bg-[#5B4B8A] text-white' : 'border border-[#9B8EC4]/60 text-[#1A1530]/40'
             }`}>{n}</div>
             {n < 2 && <div className={`h-px w-12 transition-colors ${step > n ? 'bg-[#5B4B8A]' : 'bg-[#9B8EC4]/40'}`} />}
