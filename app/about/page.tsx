@@ -24,9 +24,9 @@ export default function About() {
         <p>
           I came to yoga in 2018 out of curiosity, the way you stumble into
           something without a plan and realize it&apos;s exactly where you wanted
-          to be. What kept me coming back was how welcoming it felt: less rigid
-          than the movement practices I&apos;d known, more interested in exploration
-          than perfection.
+          to be. What kept me coming back to the mat was how welcoming yoga felt
+          in comparison to other movement practices. Yoga presented an avenue
+          for exploration as opposed to achievement.
         </p>
         <p>
           My classes draw on the wisdom of classical texts alongside a physical
