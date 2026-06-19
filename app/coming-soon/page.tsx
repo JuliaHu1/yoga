@@ -1,3 +1,5 @@
+import EmailSignup from "@/components/EmailSignup";
+
 export const metadata = {
   title: "Julia Hu Yoga — Coming Soon",
 };
@@ -27,12 +29,7 @@ export default function ComingSoon() {
       <p className="text-[#1A1530]/70 leading-relaxed max-w-sm mb-10">
         Sign up to receive occasional updates and announcements about public classes.
       </p>
-      <a
-        href="mailto:hujulia29@gmail.com?subject=Keep me posted"
-        className="inline-block border border-[#5B4B8A] text-[#5B4B8A] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#5B4B8A] hover:text-white transition-colors"
-      >
-        Keep me posted
-      </a>
+      <EmailSignup />
     </main>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailSignup from "@/components/EmailSignup";
 
 export default function Home() {
   return (
@@ -82,12 +83,7 @@ export default function Home() {
         <p className="text-[#1A1530]/75 leading-relaxed mb-8">
           Sign up for my email list to receive occasional updates and announcements about public classes.
         </p>
-        <a
-          href="mailto:hujulia29@gmail.com?subject=Subscribe me to class updates"
-          className="inline-block border border-[#5B4B8A] text-[#5B4B8A] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#5B4B8A] hover:text-white transition-colors"
-        >
-          Subscribe to email list
-        </a>
+        <EmailSignup />
       </section>
     </>
   );
