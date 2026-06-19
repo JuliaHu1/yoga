@@ -1,5 +1,56 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+
+const EXPERIENCE_OPTIONS = [
+  "I've never tried yoga",
+  "I've taken a few classes",
+  "I practice occasionally",
+  "I have a regular practice",
+];
+
+function CustomSelect({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        className="w-full border-b border-[#9B8EC4]/60 bg-transparent py-3 text-left font-serif text-base focus:outline-none focus:border-[#5B4B8A] transition-colors flex justify-between items-center"
+      >
+        <span className={value ? 'text-[#1A1530]' : 'text-[#1A1530]/40'}>
+          {value || 'Select one'}
+        </span>
+        <svg className={`w-4 h-4 text-[#9B8EC4] transition-transform ${open ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {open && (
+        <div className="absolute left-0 right-0 top-full mt-1 bg-[#f0eeff] border border-[#9B8EC4]/40 z-50 shadow-sm">
+          {EXPERIENCE_OPTIONS.map(opt => (
+            <button
+              key={opt}
+              type="button"
+              onClick={() => { onChange(opt); setOpen(false); }}
+              className={`w-full text-left px-4 py-3 font-serif text-base hover:bg-[#5B4B8A]/10 transition-colors ${value === opt ? 'text-[#5B4B8A]' : 'text-[#1A1530]'}`}
+            >
+              {opt}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 type Step1 = {
   name: string;
@@ -137,16 +188,10 @@ export default function BookingForm() {
 
           <div>
             <label className={labelCls}>How would you describe your yoga experience?</label>
-            <select
-              className={`${inputCls} font-serif`}
+            <CustomSelect
               value={s1.experience}
-              onChange={e => setS1(p => ({ ...p, experience: e.target.value }))}>
-              <option value="" disabled className="font-serif">Select one</option>
-              <option className="font-serif">I&apos;ve never tried yoga</option>
-              <option className="font-serif">I&apos;ve taken a few classes</option>
-              <option className="font-serif">I practice occasionally</option>
-              <option className="font-serif">I have a regular practice</option>
-            </select>
+              onChange={v => setS1(p => ({ ...p, experience: v }))}
+            />
           </div>
 
           <div>
