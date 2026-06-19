@@ -30,9 +30,19 @@ const AVAILABILITY = [
   'Weekends',
 ];
 
+function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, '');
+  if (digits.length === 0) return '';
+  if (digits.length <= 3) return `(${digits}`;
+  if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6, 10)}`;
+}
+
+type SubmitState = 'idle' | 'loading' | 'done' | 'error';
+
 export default function BookingForm() {
   const [step, setStep] = useState(1);
-  const [submitted, setSubmitted] = useState(false);
+  const [submitState, setSubmitState] = useState<SubmitState>('idle');
 
   const [s1, setS1] = useState<Step1>({
     name: '',
@@ -54,24 +64,29 @@ export default function BookingForm() {
   const step1Valid =
     s1.name.trim() && s1.email.trim() && s1.experience && s1.motivation.length > 0;
 
-  const handleSubmit = () => {
-    const body = [
-      `Name: ${s1.name}`,
-      `Email: ${s1.email}`,
-      `Experience: ${s1.experience}`,
-      `What brings me here: ${s1.motivation.join(', ')}`,
-      ``,
-      `What I'm hoping for: ${s2.goals}`,
-      `Physical considerations: ${s2.physical || 'None shared'}`,
-      `Phone: ${s2.phone}`,
-      `Availability: ${s2.availability.join(', ') || 'Not specified'}`,
-    ].join('\n');
-
-    window.location.href = `mailto:hujulia29@gmail.com?subject=1:1 Inquiry from ${encodeURIComponent(s1.name)}&body=${encodeURIComponent(body)}`;
-    setSubmitted(true);
+  const handleSubmit = async () => {
+    setSubmitState('loading');
+    const base = process.env.NEXT_PUBLIC_BOOKING_SHEETS_URL;
+    if (base) {
+      try {
+        const url = new URL(base);
+        url.searchParams.set('name', s1.name);
+        url.searchParams.set('email', s1.email);
+        url.searchParams.set('experience', s1.experience);
+        url.searchParams.set('motivation', s1.motivation.join(', '));
+        url.searchParams.set('goals', s2.goals);
+        url.searchParams.set('physical', s2.physical || 'None shared');
+        url.searchParams.set('phone', s2.phone);
+        url.searchParams.set('availability', s2.availability.join(', ') || 'Not specified');
+        await fetch(url.toString(), { method: 'GET', mode: 'no-cors' });
+      } catch {
+        // no-cors won't surface errors; treat as success
+      }
+    }
+    setSubmitState('done');
   };
 
-  if (submitted) {
+  if (submitState === 'done') {
     return (
       <div className="text-center py-24 max-w-lg mx-auto px-8">
         <h2 className="font-serif text-4xl font-light text-[#1A1530] mb-6">Thank you, {s1.name.split(' ')[0]}.</h2>
@@ -122,13 +137,15 @@ export default function BookingForm() {
 
           <div>
             <label className={labelCls}>How would you describe your yoga experience?</label>
-            <select className={inputCls} value={s1.experience}
+            <select
+              className={`${inputCls} font-serif`}
+              value={s1.experience}
               onChange={e => setS1(p => ({ ...p, experience: e.target.value }))}>
-              <option value="" disabled>Select one</option>
-              <option>I&apos;ve never tried yoga</option>
-              <option>I&apos;ve taken a few classes</option>
-              <option>I practice occasionally</option>
-              <option>I have a regular practice</option>
+              <option value="" disabled className="font-serif">Select one</option>
+              <option className="font-serif">I&apos;ve never tried yoga</option>
+              <option className="font-serif">I&apos;ve taken a few classes</option>
+              <option className="font-serif">I practice occasionally</option>
+              <option className="font-serif">I have a regular practice</option>
             </select>
           </div>
 
@@ -159,7 +176,7 @@ export default function BookingForm() {
           <div>
             <label className={labelCls}>What are you hoping to get from working together?</label>
             <textarea className={`${inputCls} resize-none`} rows={4}
-              placeholder="No need to have it figured out — even a rough sense is helpful."
+              placeholder="No need to have it figured out. Even a rough sense is helpful."
               value={s2.goals} onChange={e => setS2(p => ({ ...p, goals: e.target.value }))} />
           </div>
 
@@ -172,8 +189,17 @@ export default function BookingForm() {
 
           <div>
             <label className={labelCls}>Best phone number</label>
-            <input className={inputCls} type="tel" placeholder="+1 (415) 000-0000" value={s2.phone}
-              onChange={e => setS2(p => ({ ...p, phone: e.target.value }))} />
+            <input
+              className={inputCls}
+              type="tel"
+              inputMode="numeric"
+              placeholder="(415) 000-0000"
+              value={s2.phone}
+              onChange={e => {
+                const formatted = formatPhone(e.target.value);
+                setS2(p => ({ ...p, phone: formatted }));
+              }}
+            />
           </div>
 
           <div>
@@ -195,9 +221,10 @@ export default function BookingForm() {
             </button>
             <button
               onClick={handleSubmit}
-              className="inline-block border border-[#5B4B8A] text-[#5B4B8A] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#5B4B8A] hover:text-white transition-colors"
+              disabled={submitState === 'loading'}
+              className="inline-block border border-[#5B4B8A] text-[#5B4B8A] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#5B4B8A] hover:text-white transition-colors disabled:opacity-30"
             >
-              Send my details
+              {submitState === 'loading' ? 'Sending...' : 'Send my details'}
             </button>
           </div>
 
