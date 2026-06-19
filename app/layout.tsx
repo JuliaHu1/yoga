@@ -19,6 +19,10 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Julia Hu Yoga",
   description: "Dynamic, intentional vinyasa yoga with Julia Hu in San Francisco.",
+  icons: {
+    icon: '/icon.svg',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
