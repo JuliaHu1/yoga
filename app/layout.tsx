@@ -3,7 +3,6 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import CustomCursor from "@/components/CustomCursor";
-import FloralAccents from "@/components/FloralAccents";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -32,10 +31,7 @@ export default function RootLayout({
       <body className="text-[#1A1530] font-sans antialiased overflow-x-hidden">
         <CustomCursor />
         <Nav />
-        <div className="relative">
-          <FloralAccents />
-          <main>{children}</main>
-        </div>
+        <main>{children}</main>
         <footer className="px-5 md:px-8 py-10 md:py-12 border-t border-[#9B8EC4]/40 mt-16 md:mt-24 text-center text-sm text-[#5B4B8A]/80 tracking-wide font-serif">
           &copy; {new Date().getFullYear()} Julia Hu Yoga. All rights reserved.
         </footer>
