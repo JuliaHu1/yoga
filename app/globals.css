@@ -47,3 +47,46 @@ p, li, a, span, input, textarea, button {
     text-wrap: balance;
   }
 }
+
+/* Floral scroll accents */
+.floral-accent {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 1.2s ease, transform 1.4s ease;
+}
+
+.floral-accent.floral-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floral-accent .floral-stem {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  transition: stroke-dashoffset 1.6s ease 0.3s;
+}
+.floral-accent.floral-visible .floral-stem {
+  stroke-dashoffset: 0;
+}
+
+.floral-accent .floral-leaf-l,
+.floral-accent .floral-leaf-r {
+  opacity: 0;
+  transform-origin: center;
+}
+.floral-accent .floral-leaf-l { transform: rotate(-20deg) scale(0.6); transition: opacity 0.8s ease 0.8s, transform 1s cubic-bezier(0.34,1.56,0.64,1) 0.8s; }
+.floral-accent .floral-leaf-r { transform: rotate(20deg) scale(0.6); transition: opacity 0.8s ease 1s, transform 1s cubic-bezier(0.34,1.56,0.64,1) 1s; }
+.floral-accent.floral-visible .floral-leaf-l { opacity: 0.45; transform: rotate(0deg) scale(1); }
+.floral-accent.floral-visible .floral-leaf-r { opacity: 0.45; transform: rotate(0deg) scale(1); }
+
+.floral-accent .floral-petal {
+  opacity: 0;
+  transform-origin: bottom center;
+  transform: scaleY(0.3) rotate(0deg);
+}
+.floral-accent .floral-petal-ol { transition: opacity 0.7s ease 0.6s, transform 1s cubic-bezier(0.34,1.56,0.64,1) 0.6s; }
+.floral-accent .floral-petal-or { transition: opacity 0.7s ease 0.7s, transform 1s cubic-bezier(0.34,1.56,0.64,1) 0.7s; }
+.floral-accent .floral-petal-ml { transition: opacity 0.7s ease 0.9s, transform 1s cubic-bezier(0.34,1.56,0.64,1) 0.9s; }
+.floral-accent .floral-petal-mr { transition: opacity 0.7s ease 1s, transform 1s cubic-bezier(0.34,1.56,0.64,1) 1s; }
+.floral-accent .floral-petal-c  { transition: opacity 0.7s ease 1.1s, transform 1s cubic-bezier(0.34,1.56,0.64,1) 1.1s; }
+.floral-accent.floral-visible .floral-petal { opacity: 1; transform: scaleY(1) rotate(0deg); }
