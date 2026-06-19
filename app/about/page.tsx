@@ -9,7 +9,7 @@ export default function About() {
       <img
         src="/yoga2.jpg"
         alt="Julia in sphinx pose outdoors on a wooden deck"
-        className="w-full h-[40vh] md:h-[55vh] object-cover object-center mb-10 md:mb-16"
+        className="w-full h-[30vh] md:h-[40vh] object-cover object-center mb-10 md:mb-16"
       />
 
       <h1 className="font-serif text-4xl md:text-5xl font-light text-[#1A1530] mb-8 md:mb-12">
