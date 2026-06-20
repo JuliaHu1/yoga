@@ -50,13 +50,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Offerings */}
+      <section className="max-w-4xl mx-auto px-5 md:px-8 pb-20 md:pb-28">
+        <h2 className="font-serif text-3xl md:text-4xl font-light text-[#1A1530] mb-12 md:mb-16 text-center">
+          Ways to practice
+        </h2>
+        <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+          <div>
+            <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">1:1 Sessions</h3>
+            <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
+              Private sessions tailored entirely to you — your body, your goals, your pace. A good fit if you want focused attention or are working through something specific.
+            </p>
+            <Link
+              href="/booking"
+              className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+            >
+              Work with me
+            </Link>
+          </div>
+          <div>
+            <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Pop-up Classes</h3>
+            <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
+              Occasional outdoor classes in San Francisco parks, open to all levels. Sign up for the mailing list below to be the first to know when the next one is happening.
+            </p>
+            <Link
+              href="#subscribe"
+              className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+            >
+              Join the list
+            </Link>
+          </div>
+          <div>
+            <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Group &amp; Corporate</h3>
+            <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
+              Semi-private sessions, team events, and workplace wellness. Get in touch to talk through what would work for your group.
+            </p>
+            <Link
+              href="/booking"
+              className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+            >
+              Get in touch
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* About link with portrait */}
       <section className="w-full overflow-hidden">
         <div className="max-w-5xl mx-auto px-5 md:px-8 pb-20 md:pb-28 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <img
             src="/yoga4.jpg"
             alt="Julia in tree pose in front of a tropical mural"
-            className="w-full h-[50vh] md:h-[70vh] object-cover object-top"
+            className="w-full h-[50vh] md:h-[70vh] object-cover object-[center_20%]"
           />
           <div>
             <h2 className="font-serif text-3xl md:text-4xl font-light text-[#1A1530] mb-6 md:mb-8 leading-snug">
@@ -76,12 +121,12 @@ export default function Home() {
       </section>
 
       {/* Email subscribe */}
-      <section className="max-w-xl mx-auto px-5 md:px-8 pb-20 md:pb-28 text-center">
+      <section id="subscribe" className="max-w-xl mx-auto px-5 md:px-8 pb-20 md:pb-28 text-center">
         <h2 className="font-serif text-2xl md:text-3xl font-light text-[#1A1530] mb-4">
           Stay in the loop
         </h2>
         <p className="text-[#1A1530]/75 leading-relaxed mb-8">
-          Sign up for my email list to receive occasional updates and announcements about public classes.
+          Sign up to hear about upcoming pop-up park classes and occasional updates. No spam, ever.
         </p>
         <EmailSignup />
       </section>
