@@ -59,7 +59,7 @@ export default function Home() {
           <div>
             <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">1:1 Sessions</h3>
             <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
-              Private sessions tailored entirely to you — your body, your goals, your pace. A good fit if you want focused attention or are working through something specific.
+              Private sessions tailored entirely to you — your body, your goals, at your pace. A good fit if you want focused attention or are working through something specific, such as an injury or a desire to feel more at home in your own skin.
             </p>
             <Link
               href="/booking"
@@ -71,7 +71,7 @@ export default function Home() {
           <div>
             <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Pop-up Classes</h3>
             <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
-              Occasional outdoor classes in San Francisco parks, open to all levels. Sign up for the mailing list below to be the first to know when the next one is happening.
+              Occasional outdoor classes in San Francisco parks, open to all levels. Sign up below to be the first to know when the next one is scheduled.
             </p>
             <Link
               href="#subscribe"
@@ -83,7 +83,7 @@ export default function Home() {
           <div>
             <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Group &amp; Corporate</h3>
             <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
-              Semi-private sessions, team events, and workplace wellness. Get in touch to talk through what would work for your group.
+              Semi-private sessions, team events, and workplace wellness classes. Get in touch to talk through what would work best for your group.
             </p>
             <Link
               href="/booking"
@@ -126,7 +126,7 @@ export default function Home() {
           Stay in the loop
         </h2>
         <p className="text-[#1A1530]/75 leading-relaxed mb-8">
-          Sign up to hear about upcoming pop-up park classes and occasional updates. No spam, ever.
+          Sign up to hear about upcoming pop-up park classes and occasional updates.
         </p>
         <EmailSignup />
       </section>
