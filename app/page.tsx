@@ -115,7 +115,7 @@ export default function Home() {
               Movement as a way of listening
             </h2>
             <p className="text-[#1A1530]/75 leading-relaxed text-lg mb-6">
-              Each class is an unhurried exploration, an honest conversation between breath and body.
+              Each class is an unhurried exploration and an honest conversation between breath and body.
             </p>
             <Link
               href="/about"
