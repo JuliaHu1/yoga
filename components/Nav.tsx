@@ -7,13 +7,13 @@ export default function Nav() {
         Julia Hu Yoga
       </Link>
       <div className="flex gap-1 md:gap-2">
-        <Link href="/" className="px-4 py-3 min-h-[44px] flex items-center text-xs md:text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
+        <Link href="/" className="px-5 py-4 min-h-[56px] flex items-center text-xs md:text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
           Home
         </Link>
-        <Link href="/about" className="px-4 py-3 min-h-[44px] flex items-center text-xs md:text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
+        <Link href="/about" className="px-5 py-4 min-h-[56px] flex items-center text-xs md:text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
           About
         </Link>
-        <Link href="/booking" className="px-4 py-3 min-h-[44px] flex items-center text-xs md:text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
+        <Link href="/booking" className="px-5 py-4 min-h-[56px] flex items-center text-xs md:text-sm tracking-widest uppercase text-[#1A1530]/70 hover:text-[#5B4B8A] transition-colors">
           Booking
         </Link>
       </div>
