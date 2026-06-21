@@ -55,42 +55,49 @@ export default function Home() {
         <h2 className="font-serif text-3xl md:text-4xl font-light text-[#1A1530] mb-12 md:mb-16 text-center">
           Ways to practice
         </h2>
-        <div className="grid md:grid-cols-3 gap-10 md:gap-12">
-          <div>
-            <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">1:1 Sessions</h3>
-            <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
-              Private sessions tailored entirely to you — your body, your goals, at your pace. A good fit if you want focused attention or are working through something specific, such as an injury or a desire to feel more at home in your own skin.
-            </p>
-            <Link
-              href="/booking"
-              className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
-            >
-              Work with me
-            </Link>
+        <div className="space-y-12 md:space-y-16">
+          {/* 1:1 — featured */}
+          <div className="border-t border-[#9B8EC4]/30 pt-10 md:grid md:grid-cols-2 md:gap-16 md:items-start">
+            <h3 className="font-serif text-2xl md:text-3xl font-light text-[#1A1530] mb-4 md:mb-0">1:1 Sessions</h3>
+            <div>
+              <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
+                Private sessions tailored entirely to your body, your goals, and at your pace. A good fit if you want focused attention or are working through something specific, such as an injury or a desire to feel more at home in your own body.
+              </p>
+              <Link
+                href="/booking"
+                className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+              >
+                Work with me
+              </Link>
+            </div>
           </div>
-          <div>
-            <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Pop-up Classes</h3>
-            <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
-              Occasional outdoor classes in San Francisco parks, open to all levels. Sign up below to be the first to know when the next one is scheduled.
-            </p>
-            <Link
-              href="#subscribe"
-              className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
-            >
-              Join the list
-            </Link>
-          </div>
-          <div>
-            <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Group &amp; Corporate</h3>
-            <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
-              Semi-private sessions, team events, and workplace wellness classes. Get in touch to talk through what would work best for your group.
-            </p>
-            <Link
-              href="/booking"
-              className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
-            >
-              Get in touch
-            </Link>
+
+          {/* Two secondary offerings */}
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 border-t border-[#9B8EC4]/30 pt-10">
+            <div>
+              <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Pop-up Classes</h3>
+              <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
+                Occasional outdoor classes in San Francisco parks, open to all levels. Sign up below to be the first to know when the next one is scheduled.
+              </p>
+              <Link
+                href="#subscribe"
+                className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+              >
+                Join the list
+              </Link>
+            </div>
+            <div>
+              <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Group &amp; Corporate</h3>
+              <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
+                Semi-private sessions, team events, and workplace wellness classes. Get in touch to talk through what would work best for your group.
+              </p>
+              <Link
+                href="/booking"
+                className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+              >
+                Get in touch
+              </Link>
+            </div>
           </div>
         </div>
       </section>
