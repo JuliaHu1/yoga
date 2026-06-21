@@ -27,10 +27,10 @@ export default function Home() {
             Dynamic, intentional vinyasa yoga in San Francisco.
           </p>
           <Link
-            href="/booking"
+            href="#subscribe"
             className="btn-wiggle inline-block border border-[#F5F0E8] text-[#F5F0E8] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#F5F0E8] hover:text-[#1A1530] transition-colors"
           >
-            Book a 1:1
+            Subscribe to email list
           </Link>
         </div>
       </section>
