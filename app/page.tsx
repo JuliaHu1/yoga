@@ -45,7 +45,7 @@ export default function Home() {
             How do we balance a sense of momentum with a sense of equilibrium? Yoga philosophy has been sitting with this question for thousands of years. Its answer begins not in the mind, but in the body. Yoga invites us to listen to signals that are already there, beneath the noise of everything we think we should be doing.
           </p>
           <p>
-            Rather than focusing on perfect alignment in a set of poses, I teach a practice that empowers you to feel rooted, strong, and joyful in your own body. Whether you join me for a weekend park class or book a 1:1 session, let&apos;s explore the practice together and build toward a self and a community that holds more curiosity and compassion.
+            Rather than focusing on perfect alignment in a set of poses, I teach a practice that empowers you to feel rooted, strong, and joyful in your own body. Whether you join me for a group class or a 1:1 session, I&apos;ll lead you through a practice that will leave you feeling more embodied and self-compassionate.
           </p>
         </div>
       </section>
