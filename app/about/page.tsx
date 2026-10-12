@@ -19,7 +19,18 @@ export default function About() {
       <div className="space-y-7 text-[#1A1530]/75 leading-relaxed text-lg mb-20">
         <p>
           I received my RYT-200 at Lotusland Yoga in San Francisco in 2025
-          and completed a teaching apprenticeship with Jasmine Tarkeshi.
+          and completed a teaching apprenticeship with Jasmine Tarkeshi. I
+          currently teach at{" "}
+          <a
+            href="https://www.arise.yoga/sanfrancisco"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+          >
+            Arise Yoga
+          </a>{" "}
+          in Pacific Heights, leading a monthly Foundations of Yoga workshop
+          and filling in for vinyasa and slow flow classes.
         </p>
         <p>
           I came to yoga in 2018 out of curiosity, the way you stumble into

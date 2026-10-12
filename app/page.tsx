@@ -72,8 +72,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Two secondary offerings */}
-          <div className="grid md:grid-cols-2 gap-10 md:gap-12 border-t border-[#9B8EC4]/30 pt-10">
+          {/* Three secondary offerings */}
+          <div className="grid md:grid-cols-3 gap-10 md:gap-12 border-t border-[#9B8EC4]/30 pt-10">
             <div>
               <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Pop-up Classes</h3>
               <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
@@ -85,6 +85,20 @@ export default function Home() {
               >
                 Join the list
               </Link>
+            </div>
+            <div>
+              <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Arise Yoga</h3>
+              <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
+                Monthly Foundations of Yoga workshop and vinyasa and slow flow classes at Arise Yoga in Pacific Heights, open to the public.
+              </p>
+              <a
+                href="https://www.arise.yoga/sanfrancisco"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
+              >
+                View schedule
+              </a>
             </div>
             <div>
               <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Group &amp; Corporate</h3>
