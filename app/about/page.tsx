@@ -29,8 +29,9 @@ export default function About() {
           >
             Arise Yoga
           </a>{" "}
-          in Pacific Heights, leading a monthly Foundations of Yoga workshop
-          and filling in for vinyasa and slow flow classes.
+          in Pacific Heights — a weekly Hatha class on Tuesdays at 3pm, a
+          monthly Foundations of Yoga workshop, and occasional vinyasa and
+          slow flow classes.
         </p>
         <p>
           I came to yoga in 2018 out of curiosity, the way you stumble into
