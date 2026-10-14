@@ -44,8 +44,9 @@ export default function HeroSection() {
           <span
             style={{
               letterSpacing: slowSpacing,
+              marginRight: `-${slowSpacing}`,
               display: 'inline-block',
-              transition: 'letter-spacing 0.05s linear',
+              transition: 'letter-spacing 0.05s linear, margin-right 0.05s linear',
             }}
           >
             slow
