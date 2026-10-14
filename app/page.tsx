@@ -62,7 +62,7 @@ export default function Home() {
             <div>
               <h3 className="font-serif text-xl font-light text-[#1A1530] mb-3">Arise Yoga</h3>
               <p className="text-[#1A1530]/70 leading-relaxed text-base mb-5">
-                Weekly Hatha class every Tuesday at 3pm, a monthly Foundations of Yoga workshop, and occasional vinyasa and slow flow classes — all at Arise Yoga in Pacific Heights.
+                Weekly Hatha class every Tuesday at 3pm, a monthly Foundations of Yoga workshop, and occasional vinyasa and slow flow classes.
               </p>
               <a
                 href="https://www.arise.yoga/sanfrancisco"
