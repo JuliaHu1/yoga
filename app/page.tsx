@@ -98,12 +98,6 @@ export default function Home() {
             className="w-full h-[50vh] md:h-[70vh] object-cover object-[center_20%]"
           />
           <div>
-            <h2 className="font-serif text-3xl md:text-4xl font-light text-[#1A1530] mb-6 md:mb-8 leading-snug">
-              Movement as a way of listening
-            </h2>
-            <p className="text-[#1A1530]/75 leading-relaxed text-lg mb-6">
-              Create a stronger relationship between your mind and body. A regular yoga practice can improve your body awareness, posture, and self confidence.
-            </p>
             <Link
               href="/about"
               className="inline-block text-sm tracking-widest uppercase text-[#5B4B8A] border-b border-[#9B8EC4] pb-0.5 hover:text-[#1A1530] hover:border-[#1A1530] transition-colors"
