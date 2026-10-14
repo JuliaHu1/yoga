@@ -26,13 +26,12 @@ export default function HeroSection() {
 
   const slowSpacing = `${expandRatio * 0.55}em`;
 
-  // Four melt letters: S L on left, O W on right
-  // Fade in as meltProgress 0→120, fade out 500→900
+  // Four melt letters — same size/style as hero tagline, drift down from hero bottom
   const meltLetters = [
-    { char: 's', side: 'left',  offset: '3vw',  topStart: 10, fallRate: 0.10, fadeDelay: 0   },
-    { char: 'l', side: 'left',  offset: '8vw',  topStart: 22, fallRate: 0.07, fadeDelay: 60  },
-    { char: 'o', side: 'right', offset: '8vw',  topStart: 18, fallRate: 0.09, fadeDelay: 30  },
-    { char: 'w', side: 'right', offset: '3vw',  topStart: 8,  fallRate: 0.12, fadeDelay: 10  },
+    { char: 's', side: 'left',  offset: '3vw',  fallRate: 0.18, fadeDelay: 0  },
+    { char: 'l', side: 'left',  offset: '9vw',  fallRate: 0.14, fadeDelay: 40 },
+    { char: 'o', side: 'right', offset: '9vw',  fallRate: 0.16, fadeDelay: 20 },
+    { char: 'w', side: 'right', offset: '3vw',  fallRate: 0.20, fadeDelay: 10 },
   ] as const;
 
   return (
@@ -73,10 +72,10 @@ export default function HeroSection() {
       </section>
 
       {/* Melt letters — fixed in the side margins as user scrolls past the hero */}
-      {meltLetters.map(({ char, side, offset, topStart, fallRate, fadeDelay }) => {
+      {meltLetters.map(({ char, side, offset, fallRate, fadeDelay }) => {
         const progress = Math.max(0, meltProgress - fadeDelay);
-        const opacity = Math.min(1, progress / 120) * Math.max(0, 1 - Math.max(0, progress - 400) / 400);
-        const translateY = progress * fallRate;
+        const opacity = Math.min(0.7, progress / 80) * Math.max(0, 1 - Math.max(0, progress - 300) / 350);
+        const topPx = progress * fallRate;
         return (
           <div
             key={char + side}
@@ -84,18 +83,19 @@ export default function HeroSection() {
             style={{
               position: 'fixed',
               [side]: offset,
-              top: `${topStart}vh`,
-              transform: `translateY(${translateY}px) scaleY(${1 + progress * 0.001})`,
+              top: `${topPx}px`,
+              transform: `scaleY(${1 + progress * 0.0015})`,
+              transformOrigin: 'top center',
               opacity,
               pointerEvents: 'none',
               fontFamily: 'var(--font-cormorant), serif',
-              fontSize: 'clamp(4rem, 8vw, 7rem)',
+              fontSize: 'clamp(1rem, 2.5vw, 1.35rem)',
               fontWeight: 300,
-              color: '#9B8EC4',
+              fontStyle: 'italic',
+              color: '#5B4B8A',
               lineHeight: 1,
               userSelect: 'none',
               zIndex: 50,
-              transition: 'opacity 0.1s ease-out',
             }}
           >
             {char}
