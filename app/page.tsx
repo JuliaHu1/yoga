@@ -12,7 +12,7 @@ export default function Home() {
       <section className="max-w-2xl mx-auto px-5 md:px-8 py-20 md:py-28">
         <div className="space-y-7 text-[#1A1530]/80 leading-relaxed text-lg">
           <p>
-            Many of us know the feeling: doing everything right, checking every box, and still sensing that something hasn&apos;t quite clicked into place. Perhaps waiting to exhale until we hit the next milestone, then the next.
+            Many of us know the feeling: doing everything &ldquo;right,&rdquo; checking every box, and still sensing that something hasn&apos;t quite clicked into place. Perhaps waiting to exhale until we hit the next milestone, then the next.
           </p>
           <p>
             How do we balance a sense of momentum with a sense of equilibrium? Yoga philosophy has been sitting with this question for thousands of years. Its answer begins not in the mind, but in the body. Yoga invites us to listen to signals that are already there, beneath the noise of everything we think we should be doing.

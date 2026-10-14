@@ -11,7 +11,7 @@ export default function HeroSection() {
       if (!heroRef.current) return;
       const { top, height } = heroRef.current.getBoundingClientRect();
       // As hero scrolls upward out of view, ratio goes 0 → 1
-      const ratio = Math.max(0, Math.min(1, -top / (height * 0.6)));
+      const ratio = Math.max(0, Math.min(1, -top / (height * 0.25)));
       setScrollRatio(ratio);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -52,17 +52,6 @@ export default function HeroSection() {
             slow
           </span>
           {' '}down · settle in · and light your inner fire
-        </p>
-        <p
-          className="font-serif font-light mb-10"
-          style={{
-            color: '#EDE8DF',
-            textShadow: '0 1px 8px rgba(0,0,0,0.25)',
-            fontSize: 'clamp(0.85rem, 2vw, 1.05rem)',
-            opacity: 0.85,
-          }}
-        >
-          Create a stronger relationship between your mind and your body.
         </p>
         <Link
           href="#subscribe"
