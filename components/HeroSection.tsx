@@ -49,7 +49,7 @@ export default function HeroSection() {
           >
             slow
           </span>
-          {' '}down · settle in · and light your inner fire
+          {' '}down, settle in, and light your inner fire
         </p>
       </div>
     </section>
