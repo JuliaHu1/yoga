@@ -44,6 +44,7 @@ export default function HeroSection() {
             style={{
               letterSpacing: slowSpacing,
               marginRight: `-${slowSpacing}`,
+              fontFamily: 'var(--font-cormorant), serif',
             }}
           >
             slow
