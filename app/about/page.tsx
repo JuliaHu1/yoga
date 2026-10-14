@@ -19,7 +19,7 @@ export default function About() {
       <div className="space-y-7 text-[#1A1530]/75 leading-relaxed text-lg mb-20">
         <p>
           I received my RYT-200 at Lotusland Yoga in San Francisco in 2025
-          and completed a teaching apprenticeship with Jasmine Tarkeshi. I
+          and subsequently completed a teaching apprenticeship with Jasmine Tarkeshi. I
           currently teach at{" "}
           <a
             href="https://www.arise.yoga/sanfrancisco"
@@ -36,9 +36,10 @@ export default function About() {
         <p>
           I came to yoga in 2018 out of curiosity, the way you stumble into
           something without a plan and realize it&apos;s exactly where you wanted
-          to be. What kept me coming back to the mat was how welcoming yoga felt
-          in comparison to other movement practices. Yoga presented an avenue
-          for exploration as opposed to achievement.
+          to be. What kept me coming back to the mat was how inviting and
+          non-judgmental yoga felt in comparison to the activities I had
+          grown up around. Yoga presented an avenue for exploration as
+          opposed to achievement.
         </p>
         <p>
           My classes draw on the wisdom of classical texts alongside a physical
