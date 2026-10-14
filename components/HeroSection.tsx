@@ -32,21 +32,16 @@ export default function HeroSection() {
         style={{ filter: 'blur(4px) brightness(1.05) contrast(0.85)' }}
       />
       <div className="absolute inset-0 bg-black/30" />
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+      <div className="relative z-10 flex flex-col items-center justify-end h-full text-center px-6 pb-12 md:pb-16">
         <p
-          className="font-sans text-xs md:text-sm tracking-[0.25em] uppercase mb-5 font-light"
-          style={{ color: '#EDE8DF', textShadow: '0 1px 8px rgba(0,0,0,0.3)' }}
-        >
-          yoga to help you
-        </p>
-        <h1
-          className="font-serif font-light leading-tight mb-2"
+          className="font-serif font-light leading-relaxed mb-3"
           style={{
             color: '#F5F0E8',
-            textShadow: '0 1px 16px rgba(0,0,0,0.3)',
-            fontSize: 'clamp(2.8rem, 8vw, 6rem)',
+            textShadow: '0 1px 10px rgba(0,0,0,0.3)',
+            fontSize: 'clamp(1rem, 2.5vw, 1.35rem)',
           }}
         >
+          yoga to help you{' '}
           <span
             style={{
               letterSpacing: slowSpacing,
@@ -56,28 +51,19 @@ export default function HeroSection() {
           >
             slow
           </span>
-          {' '}down
-        </h1>
-        <h1
-          className="font-serif font-light leading-tight mb-2"
+          {' '}down · settle in · and light your inner fire
+        </p>
+        <p
+          className="font-serif font-light mb-10"
           style={{
-            color: '#F5F0E8',
-            textShadow: '0 1px 16px rgba(0,0,0,0.3)',
-            fontSize: 'clamp(2.8rem, 8vw, 6rem)',
+            color: '#EDE8DF',
+            textShadow: '0 1px 8px rgba(0,0,0,0.25)',
+            fontSize: 'clamp(0.85rem, 2vw, 1.05rem)',
+            opacity: 0.85,
           }}
         >
-          settle in
-        </h1>
-        <h1
-          className="font-serif font-light leading-tight mb-10"
-          style={{
-            color: '#F5F0E8',
-            textShadow: '0 1px 16px rgba(0,0,0,0.3)',
-            fontSize: 'clamp(2rem, 5vw, 4rem)',
-          }}
-        >
-          and light your inner fire
-        </h1>
+          Create a stronger relationship between your mind and your body.
+        </p>
         <Link
           href="#subscribe"
           className="btn-wiggle inline-block border border-[#F5F0E8] text-[#F5F0E8] px-10 py-3 text-sm tracking-widest uppercase hover:bg-[#F5F0E8] hover:text-[#1A1530] transition-colors"
