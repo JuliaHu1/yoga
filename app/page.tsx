@@ -102,7 +102,7 @@ export default function Home() {
               Movement as a way of listening
             </h2>
             <p className="text-[#1A1530]/75 leading-relaxed text-lg mb-6">
-              Create a stronger relationship between the mind and the body.
+              Create a stronger relationship between your mind and body. A regular yoga practice can improve your body awareness, posture, and self confidence.
             </p>
             <Link
               href="/about"
